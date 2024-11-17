@@ -1,0 +1,323 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Header section css */
+
+header{
+    width: 100%;
+    position: relative;
+}
+.header_section{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    background-color:rgba(255, 172, 77);
+    border-bottom: 1px solid white;
+
+}
+.top_bar{
+    width: 80%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.role{
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: white;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+
+}
+
+.nav_items, .cv_btn{
+    /* height: 40px;
+    width: 110px;
+    background-color: rgb(226, 221, 204); */
+    padding: 5px;
+    margin: 5px 15px;
+    border-radius: 22px;
+    text-align: center;
+    align-content: center;
+    font-weight: 600;
+}
+
+.cv_btn{
+    height: 40px;
+    width: 110px;
+    background-color: rgb(255, 120, 9);
+    color: white;
+    font-size: 1.2rem;
+    
+}
+
+/* -------------------------------------------------------- */
+/* Hero section css */
+.hero{
+    height: 80vh;
+    width: 100%;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaWUBGfDNH0PW3TG7eVKAqtPs9byLq2MyIug&s');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+
+/* Skills and about me section */
+
+.skills, .about_me{
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+}
+
+.skills_section, .about_section{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 0px;
+
+}
+.skills_section img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.skills_title, .about_title{
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+    grid-column: span 2;
+}
+.others, .other_achieve{
+    grid-column: span 2;
+
+}
+.language, .tools, .education, .experience{
+    width: auto;
+    text-align: start;
+
+}
+
+.language img, .tools img, .others img{
+    padding: 5px;
+    float: left;
+    clear: left;
+
+}
+.language div, .tools div, .others div{
+    height: 80px;
+    padding: 5px;
+}
+/* .skills *, .about_me *{
+    border: 1px solid black;
+} */
+
+
+/* ------------------------------------------------------------------------- */
+/* projects sections css */
+
+.projects_section{
+    background-image: url('https://media.istockphoto.com/id/1480323231/vector/abstract-yellow-watercolor-background.jpg?s=612x612&w=0&k=20&c=Zz32iLLo2e9nwTHeDDHptjhvMov6Zt0Oej_68viDPK4=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.projects{
+    width: 80%;
+    margin: auto;
+    padding: 30px 0px;
+    overflow-x: scroll;
+}
+
+.proj_title{
+    font-size: 2rem;
+    padding: 10px 0px;
+}
+
+.proj_show{
+    display:inline-flex;
+}
+
+/* card */
+
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    height: 350px;
+    width: 22vw ;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgba(240, 255, 255, 0.521);
+    backdrop-filter: 10px;
+
+}
+
+.card:hover{
+    /* border: 1px solid grey; */
+    box-shadow: 1px 1px 28px rgba(160, 159, 159, 0.7);
+
+}
+
+.image{
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.box{
+    display: inline-block;
+    padding: 4px 2px;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 1.1rem;
+
+}
+
+
+/* card */
+
+
+
+
+
+
+
+
+
+
+
+/* contact form css */
+.contact{
+    height: 70vh;
+    background-image: url('https://t4.ftcdn.net/jpg/04/81/72/77/360_F_481727770_1u2ylNpie8WRosMVbv1COXDnnEK6ofwh.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left center;
+    
+}
+.contact_form{
+    width: 80%;
+    margin: auto;
+    padding: 2rem 10px;
+    
+}
+
+.form_title{
+    width: fit-content;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    border-bottom: 4px solid white;
+}
+
+.form_input{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    margin-top: 0.8rem;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+.form_input:hover{
+    box-shadow: 2px 2px 10px rgba(173, 173, 173, 0.541);
+
+}
+
+.input_box{
+    margin: 10px 0px;
+    font-size: 1.3rem;
+    text-align: top;
+    display: flex;
+    gap: 10px;
+
+}
+
+.input_box input, .input_box textarea{
+    height: 35px;
+    width: 20vw;
+    border-radius: 8px;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 20px;
+    
+}
+
+.input_box textarea{
+    height: 80px;
+    margin-left: 0px;
+    resize: vertical;
+
+}
+
+.submit_btn button{
+    height: 40px;
+    width: 100px;
+    background-color: rgb(255, 120, 9);
+    border: none;
+    border-radius: 24px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: auto;
+ }
+
+
+
+
+
+
+/* ------------------------------------------------------- */
+/* Footer css */
+footer{
+    background-color: rgb(44, 44, 44);
+}
+
+.footer{
+    width: 80%;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+    bottom: 0px;
+}
