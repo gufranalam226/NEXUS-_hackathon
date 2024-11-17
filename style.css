@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 14px;
 }
 body{
     width: 100%;
@@ -230,7 +230,7 @@ header{
 
 .card{
     height: 350px;
-    width: 300px ;
+    width: 260px ;
     overflow: hidden;
     padding: 10px;
     border-radius: 10px;
@@ -248,7 +248,7 @@ header{
 
 .image{
     width: 100%;
-    height: 180px;
+    height: 150px;
     object-fit: contain;
     border-radius: 10px;
     overflow: hidden;
@@ -405,11 +405,14 @@ footer{
 /* media querry for mobile */
 
 @media (max-width: 600px) {
+    .top_bar{
+        align-items: center;
+    }
     .nav{
         display: none;
     }
     .role{
-        font-size: 30px;
+        font-size: 6vw;
     }
     .hero_sec{
         display: block;
